@@ -1,25 +1,51 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .headerArea{
-    flex: 1;
-    background-color: #fff;
     padding: 10px;
+    margin-bottom: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    height: 65px;
+    background-color: #FF8C69;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
 }
 
 .title{
-    color:#EE6A50;
+    color: #FFF;
+    text-align: center;
+}
+
+.titleBreak{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.textInput{
+    font-weight: bold;
+    color: #FFF;
+}
+
+.input{
+    border-radius: 5px;
+    border-color: #FFF;
+   font-size: 14px;
 }
 
 .container{
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction:column
 }
 
 .img{
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .timer{
@@ -34,9 +60,13 @@
 }
 
 .button{
+    color: #FF6347;
+    font-weight: bold;
+    margin-top: 10px;
+    border-color: #fff;
     width: 150px;
-    height: 30px;
-    font-size: 18px;
+    height: 38px;
+    font-size: 16px;
     padding: 5px;
     background-color:#fff;
     text-align: center;
@@ -46,8 +76,79 @@
     cursor: pointer;
 }
 
+.buttonStart{
+    color: #FF6347;
+    font-weight: bold;
+    border-color: #fff;
+    width: 150px;
+    height: 55px;
+    font-size: 35px;
+    padding: 5px;
+    background-color:#fff;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
 .button:hover{
     opacity: 0.6;
     color: #000;
     transition: all 0.50s;
+}
+.buttonStart:hover{
+    opacity: 0.6;
+    color: #000;
+    transition: all 0.50s;
+}
+
+.configArea{
+    flex-direction: row;
+    background-color: #FF8C69;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFF;
+    text-align: center;
+    justify-content: end;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.input{
+    width: 40px;
+    text-align: center;
+    margin: 5px;
+}
+.buttonOk{
+ width: 30px;
+ height: 30px;
+ margin: 5px;
+ background-color:#FF6347;
+ border-color: #FFF;
+ color: #fff;
+ cursor: pointer;
+ border-radius: 10px;
+ font-size: 15px;
+}
+
+.buttonOk:hover{
+    opacity: 0.6;
+    transition: all 0.50s;
+}
+
+.buttonConfig{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 20px;
+    coloR: #FFF;  
+    background-color:#FF6347;
+    border-width: 1px;
+    border-color: #FFF;
+    border-radius: 10PX;
+    cursor: pointer;
 }
